@@ -17,6 +17,6 @@ Clone the repository in your document root
 Digital to analog [demo](http://hansmann.li/uhr/digital2analog.php)  
 Analog to digitag [demo](http://hansmann.li/uhr/analog2digital.php)
 ## Authors
- * Roland Hansmann - initial work - [https://github.com/rediculum)[rediculum]
+ * Roland Hansmann - initial work - [rediculum](https://github.com/rediculum)
 ## License
 This project is licensed unter the GNU GPLv3 License
