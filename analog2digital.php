@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Uhrzeiten analog in digital</title>
+<title>a2d</title>
 <style>
 body {
   width: 90%;
@@ -11,14 +11,17 @@ table {
   font-size: 30px;
   width: 100%;
 }
+#center {
+  text-align: center;
+}
 #right {
   text-align: right;
 }
 </style>
 </head>
 <body>
+<h1 id=center>Analog > Digital</h1>
 <?php
-
 function digit($min, $max, $step) {
   return str_pad(round(rand($min, $max)/$step)*$step,2,0,STR_PAD_LEFT);
 }

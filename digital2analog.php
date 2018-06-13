@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Uhrzeiten digital in analog</title>
+<title>d2a</title>
 <style>
 body {
   width: 80%;
@@ -13,6 +13,7 @@ table {
 }
 #center {
   vertical-align: center;
+  text-align: center;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -24,6 +25,7 @@ table {
 </style>
 </head>
 <body>
+<h1 id=center>Digital > Analog</h1>
 <?php
 
 function digit($min, $max, $step) {
