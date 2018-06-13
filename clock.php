@@ -2,14 +2,15 @@
 function hour2deg($value, $min) {
     $fromRange = 12;
     $toRange = 360;
-    $scaleFactor = $toRange / $fromRange + $min / 8;
+    $offset = $min / 2; // 60min  = 30deg
+    $scaleFactor = $toRange / $fromRange;
 
     // Re-zero the value within the from range
     $tmpValue = $value;
     // Rescale the value to the to range
     $tmpValue *= $scaleFactor;
     // Re-zero back to the to range
-    return $tmpValue;
+    return $tmpValue + $offset;
 }
 
 function min2deg($value) {
@@ -78,6 +79,8 @@ $minutes = $_REQUEST['m'];
 if ($hours && $minutes) {
   needle(hour2deg($hours,$minutes),30,3,$black);
   needle(min2deg($minutes),40,1,$black);
+} else {
+  true; // draw empty clock
 }
 
 imagepng($img);
