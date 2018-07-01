@@ -1,31 +1,10 @@
 <html>
 <head>
 <title>d2a</title>
-<style>
-body {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-table {
-  font-size: 40px;
-  width: 100%;
-}
-#center {
-  vertical-align: center;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-#right {
-  text-align: right;
-  margin-right: 20px;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<h1 id=center>Digital > Analog</h1>
+<h1 class=center>Digital > Analog</h1>
 <?php
 
 function digit($min, $max, $step) {
@@ -35,9 +14,9 @@ function digit($min, $max, $step) {
 for ($row = 0; $row < 9; $row++) {
   echo "<table><tr>";
   for ($col = 0; $col < 2; $col++) {
-    echo "<td id=right>";
-    print digit(0,24,1) . ":" . digit(0,45,15) . "&nbsp;=&nbsp; ";
-    echo "</td><td id=center>";
+    echo "<td class=\"right digital\">";
+    print digit(0,24,1) . ":" . digit(0,45,15) . "</td><td>=";
+    echo "</td><td class=center>";
     echo "<img src=clock.php width=100 height=100>";
     echo "</td>";
   }
