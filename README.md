@@ -2,11 +2,11 @@
 These are two websites where clocks are generated randomly.  
 Its designed for primary school children learning quarter hours.  
 ## Getting Started
-Print out the page (fits A4) in order to fill in either the analog needles or the digital numbers with a pen.  
+Print out the page (fits A4) in order to draw either the hands or fill the digital numbers with a pen.  
 Try to spell the given time as well.
 ## Prerequisites
 - Webserver
-- PHP
+- PHP7
 - GD Library
 ## Installing
 Clone the repository in your document root   
