@@ -2,6 +2,7 @@
 <head>
 <title>d2a</title>
 <link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="clock.css">
 </head>
 <body>
 <h1 class=center>Digital > Analog</h1>
@@ -15,10 +16,21 @@ for ($row = 0; $row < 9; $row++) {
   echo "<table><tr>";
   for ($col = 0; $col < 2; $col++) {
     echo "<td class=\"right digital\">";
-    print digit(0,24,1) . ":" . digit(0,45,15) . "</td><td>=";
-    echo "</td><td class=center>";
-    echo "<img src=clock.php width=100 height=100>";
-    echo "</td>";
+    print digit(0,24,1) . ":" . digit(0,45,15) . "</td><td>=";?>
+    </td><td class=center>
+    <article class="clock">
+      <div class="hours-container">
+        <div class="hours"></div>
+      </div>
+      <div class="minutes-container">
+        <div class="minutes"></div>
+      </div>
+      <div class="seconds-container">
+        <div class="seconds"></div>
+      </div>
+    </article>
+    </td>
+  <?php
   }
   echo "</tr></table>";
 }
