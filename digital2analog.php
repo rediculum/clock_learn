@@ -19,15 +19,6 @@ for ($row = 0; $row < 9; $row++) {
     print digit(0,24,1) . ":" . digit(0,45,15) . "</td><td>=";?>
     </td><td class=center>
     <article class="clock">
-      <div class="hours-container">
-        <div class="hours"></div>
-      </div>
-      <div class="minutes-container">
-        <div class="minutes"></div>
-      </div>
-      <div class="seconds-container">
-        <div class="seconds"></div>
-      </div>
     </article>
     </td>
   <?php
