@@ -7,7 +7,6 @@ Try to spell the given time as well.
 ## Prerequisites
 - Webserver
 - PHP7
-- GD Library
 ## Installing
 Clone the repository in your document root   
 `git clone git@github.com:rediculum/clock_learn.git`
