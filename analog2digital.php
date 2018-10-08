@@ -39,29 +39,26 @@ function min2deg($value) {
 }
 
 $icon = array("moon.png", "sun.png");
-
+echo "<table>";
 for ($row = 0; $row < 9; $row++) {
-  echo "<table><tr>";
+  echo "<tr>";
   for ($col = 0; $col < 2; $col++) {
     $minute = min2deg(digit(15,60,15));
     $hour = hour2deg(digit(0,11,1), $minute);?>
-    <td class=center>
-    <article class="clock" style="height: 20px;">
+    <td class="clock" style="height: 20px;">
       <div class="minutes-container">
         <div class="minutes" style="transform: rotate(<?php echo $minute?>deg)"></div>
       </div>
       <div class="hours-container">
         <div class="hours" style="transform: rotate(<?php echo $hour?>deg)"></div>
       </div>
-    </article>
     <?php
     echo "<img src=" . $icon[rand(0,1)] . " width=20 height=20>";?>
-    </td><td>=&nbsp;____
-    &nbsp;:
-    ____
     </td>
+    <td class=left>=&nbsp;____&nbsp;:____</td>
   <?php }
-  echo "</tr></table>";
+  echo "</tr>";
 } ?>
+</table>
 </body>
 </html>
