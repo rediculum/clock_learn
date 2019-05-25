@@ -43,14 +43,15 @@ echo "<table>";
 for ($row = 0; $row < 9; $row++) {
   echo "<tr>";
   for ($col = 0; $col < 2; $col++) {
-    $minute = min2deg(digit(15,60,15));
-    $hour = hour2deg(digit(0,11,1), $minute);?>
+    $minute = digit(15,60,15);
+    $minuteDeg = min2deg($minute);
+    $hourDeg = hour2deg(digit(1,12,1), $minute);?>
     <td class="clock" style="height: 20px;">
       <div class="minutes-container">
-        <div class="minutes" style="transform: rotate(<?php echo $minute?>deg)"></div>
+        <div class="minutes" style="transform: rotate(<?php echo $minuteDeg?>deg)"></div>
       </div>
       <div class="hours-container">
-        <div class="hours" style="transform: rotate(<?php echo $hour?>deg)"></div>
+        <div class="hours" style="transform: rotate(<?php echo $hourDeg?>deg)"></div>
       </div>
     <?php
     echo "<img src=" . $icon[rand(0,1)] . " width=20 height=20>";?>
