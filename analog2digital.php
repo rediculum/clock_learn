@@ -40,7 +40,7 @@ function min2deg($value) {
 
 $icon = array("moon.png", "sun.png");
 echo "<table>";
-for ($row = 0; $row < 9; $row++) {
+for ($row = 0; $row < 7; $row++) {
   echo "<tr>";
   for ($col = 0; $col < 2; $col++) {
     $minute = digit(15,60,15);
