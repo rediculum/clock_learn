@@ -43,7 +43,7 @@ echo "<table>";
 for ($row = 0; $row < 7; $row++) {
   echo "<tr>";
   for ($col = 0; $col < 2; $col++) {
-    $minute = digit(15,60,15);
+    $minute = digit(1,60,5);
     $minuteDeg = min2deg($minute);
     $hourDeg = hour2deg(digit(1,12,1), $minute);?>
     <td class="clock" style="height: 20px;">

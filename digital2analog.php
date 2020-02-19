@@ -17,7 +17,7 @@ for ($row = 0; $row < 7; $row++) {
   echo "<tr>";
   for ($col = 0; $col < 2; $col++) {
     echo "<td class=\"right digital\">";
-    print digit(0,24,1) . ":" . digit(0,45,15) . "</td><td>=";?>
+    print digit(0,24,1) . ":" . digit(1,50,5) . "</td><td>=";?>
     <td class="clock">
     <p></td>
   <?php
