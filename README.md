@@ -10,7 +10,7 @@ Refresh website to generate new times.
 - PHP7
 ## Installing
 Clone the repository in your document root   
-`git clone https://github.com/rediculum/clock_learn.git
+`git clone https://github.com/rediculum/clock_learn.git`
 ## Built With
  * vim
 ## Demo
